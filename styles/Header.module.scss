@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+.o-header {
+    align-items: center;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    font-size: 1.5rem;
+    height: $headerMobileHeight;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    transition: height 0.5s ease;
+    width: 100%;
+
+    @media (min-width: $desktop-bp) {
+        font-size: 3rem;
+        height: $headerHeight;
+        justify-content: start;
+        padding-left: 2rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &--smaller {
+        height: $headerMobileHeightScrolled;
+    }
+}

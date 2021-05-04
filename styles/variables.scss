@@ -3,8 +3,16 @@ $primaryColor: #7FC4FD;
 $lightGray: #EEEEEE;
 $white: #FFFFFF;
 $midGray: #AAAAAA;
+$black: #000000;
 
 
 /*---Breakpoints---*/
 $tablet-bp: 900px;
 $desktop-bp: 1200px;
+$xl-breakpoint: 1440px;
+
+
+$headerMobileHeight: 64px;
+$headerMobileHeightScrolled: 48px;
+$headerHeight: 104px;
+$headerHeightScrolled: 72px;
