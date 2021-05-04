@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+.btn {
+    appearance: none;
+    border: 0;
+    border-radius: 8px;
+    text-transform: uppercase;
+
+    &--primary {
+        background-color: $primaryColor;
+        color: $black;
+    }
+    
+    &--small {
+        width: $btnSmall;
+    }
+
+    &--medium {
+        width: $btnMedium;
+    }
+
+    &--big {
+        height: $btnBigHeigh;
+        width: $btnBig;
+    }
+}

@@ -1,9 +1,11 @@
 @import './variables.scss';
 
 .app {
+    display: flex;
+    flex-direction: row;
     height: 100vh;
 
     &-content {
-        padding-top: 100px;
+        width: 100%;
     }
 }
