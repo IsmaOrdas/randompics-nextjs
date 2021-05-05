@@ -1,5 +1,6 @@
 import styles from '../../styles/SearchForm.module.scss';
 import Image from 'next/image'
+import Button from '../Button';
 
 export default function SearchForm() {
     return (
@@ -22,6 +23,11 @@ export default function SearchForm() {
                         height={20}
                     />
                 </button>
+            </div>
+            <div className={styles["search-form__btns-wrap"]}>
+                <Button type="primary" size="small">color</Button>
+                <Button size="small">grayscale</Button>
+                <Button size="small">blur</Button>
             </div>
         </form>
     )
