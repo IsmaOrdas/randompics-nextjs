@@ -8,7 +8,7 @@ export default function PhotosStack(props) {
                 <div className={styles["photos-stack--main"]}>
                     <div className={styles["photos-stack--img"]}>
                         <Image
-                            src="/perrete.svg"
+                            src="/perrete.jpg"
                             alt="Picture of the author"
                             width={400}
                             height={400}

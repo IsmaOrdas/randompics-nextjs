@@ -46,15 +46,11 @@
     &--main {
         align-items: center;
         display: flex;
-        height: 252px;
         justify-content: center;
-        padding: 30px;
-        width: 252px;
+        padding: 46px;
     }
 
     &--img {
-        height: 220px;
         transform: rotate(-12deg);
-        width: 220px;
     }
 }
