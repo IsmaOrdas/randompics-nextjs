@@ -8,8 +8,8 @@ import SearchImages from '../components/SearchImages'
 export default function Home() {
   return (
     <>
-      <Hero right={<PhotosStack/>}></Hero>
       <div className={styles.container}>
+        <Hero right={<PhotosStack/>}></Hero>
         <SearchImages/>
       </div>
     </>

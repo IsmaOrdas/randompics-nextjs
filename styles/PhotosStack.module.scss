@@ -28,6 +28,21 @@
         z-index: 1;
     }
 
+    @media (min-width: $desktop-bp) {
+        height: 420px;
+        width: 420px;
+
+        &:nth-child(2) {
+            margin-top: -390px;
+            margin-left: 14px;
+        }
+        
+        &:nth-child(3) {
+            margin-top: -390px;
+            margin-left: 28px;
+        }
+    }
+
     &--main {
         align-items: center;
         display: flex;

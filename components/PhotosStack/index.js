@@ -10,8 +10,8 @@ export default function PhotosStack(props) {
                         <Image
                             src="/perrete.svg"
                             alt="Picture of the author"
-                            width={190}
-                            height={190}
+                            width={400}
+                            height={400}
                         />
                     </div>
                 </div>
