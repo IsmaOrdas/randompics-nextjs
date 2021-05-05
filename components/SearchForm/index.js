@@ -13,7 +13,7 @@ export default function SearchForm() {
                     className={styles["search-form__input"]}
                     type="text"
                     placeholder="Search by author"
-                    tabindex="0"/>
+                    tabIndex="0"/>
                 <button className={styles["search-form__btn"]} aria-label="Click to search" title="Search">
                     <Image
                         src="/search-icon.svg"
