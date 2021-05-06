@@ -25,6 +25,13 @@ a {
   text-decoration: none;
 }
 
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -42,6 +49,7 @@ h6 {
   @media  (min-width: $desktop-bp) {
     margin: 0 auto;
     max-width: $contentWidth;
+    padding: 0;
   }
 }
 

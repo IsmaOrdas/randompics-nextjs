@@ -3,9 +3,11 @@
 .search-form {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 
     @media (min-width: $desktop-bp) {
         flex-direction: row;
+        margin-bottom: 40px;
     }
 
     &__input-wrap {
@@ -14,6 +16,7 @@
         width: 100%;
 
         @media (min-width: $desktop-bp) {
+            margin-bottom: 0;
             margin-right: 2rem;
             max-width: $inputSearchMaxWidth;
         }
