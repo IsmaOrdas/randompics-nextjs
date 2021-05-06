@@ -8,7 +8,6 @@ export default function SearchImages() {
     const url = `https://picsum.photos/v2/list?page=${page}&limit=${limit}`;
 
     function fetchImages(data) {
-        console.log('fetchImages', data);
         fetch(url)
         .then(response => response.json())
         .then(data => console.log(data));

@@ -46,9 +46,9 @@ export default function SearchForm(props) {
                 </button>
             </div>
             <div className={styles["search-form__btns-wrap"]}>
-                <button data-filter="color" className="btn btn--primary btn--small" onClick={selectFilter}>color</button>
-                <button data-filter="grayscale" className="btn btn--small" onClick={selectFilter}>grayscale</button>
-                <button data-filter="blur" className="btn btn--small" onClick={selectFilter}>blur</button>
+                <button data-filter="color" className={`btn btn--small ${filterSelected !== "color" ? "btn--disabled" : "btn--primary"}`} onClick={selectFilter}>color</button>
+                <button data-filter="grayscale" className={`btn btn--small ${filterSelected !== "grayscale" ? "btn--disabled" : "btn--primary"}`} onClick={selectFilter}>grayscale</button>
+                <button data-filter="blur" className={`btn btn--small ${filterSelected !== "blur" ? "btn--disabled" : "btn--primary"}`} onClick={selectFilter}>blur</button>
             </div>
         </form>
     )
