@@ -6,6 +6,7 @@ import styles from '../../styles/SearchImages.module.scss';
 export default function SearchImages() {
     const [page, setPage] = useState(1);
     const [photos, setPhotos] = useState([]);
+    const [filter, setFilter] = useState("color");
     const limit = 9;
     const url = `https://picsum.photos/v2/list?page=${page}&limit=${limit}`;
 
@@ -14,20 +15,24 @@ export default function SearchImages() {
         .then(response => response.json())
         .then(data => {
             setPhotos(data);
-
+        }).catch(error => {
+            console.error(error);
         });
-
     }
 
-        useEffect(() => {
-            fetchImages();
-        }, [page]);
+    function getFilter(filterSelected) {
+        setFilter(filterSelected);
+    }
+
+    useEffect(() => {
+        fetchImages();
+    }, [page]);
 
     return (
         <div className={styles["search-images"]}>
             <h2 className={styles["search-images__title"]}>Random Images</h2>
-            <SearchForm parentCallback={fetchImages}/>
-            <ListImages list={photos}/>
+            <SearchForm parentCallback={fetchImages} updateFilter={getFilter}/>
+            <ListImages filter={filter} list={photos}/>
         </div>
     )
 }

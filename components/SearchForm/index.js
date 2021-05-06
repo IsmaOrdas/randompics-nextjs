@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../../styles/SearchForm.module.scss';
 import Image from 'next/image'
-import Button from '../Button';
 
 export default function SearchForm(props) {
     const [filterSelected, setFilterSelected] = useState('color');
@@ -21,6 +20,10 @@ export default function SearchForm(props) {
         ev.preventDefault();
         props.parentCallback(query);
     }
+
+    useEffect(() => {
+        props.updateFilter(filterSelected)
+    }, [filterSelected])
 
     return (
         <form className={styles["search-form"]} onSubmit={submitForm}>

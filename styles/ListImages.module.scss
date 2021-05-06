@@ -7,14 +7,39 @@
     justify-content: space-between;
 
     &__item {
-        background-color: #ccc;
-        height: 337px;
         margin-bottom: 24px;
-        width: 100%;
-        max-width: 387px;
 
         @media (min-width: $desktop-bp) {
-            flex: 0 0 33%;
+            flex: 0 0 387px;
+        }
+    }
+
+    &__img-wrap {
+        position: relative;
+    }
+    
+    &__number {
+        background-color: rgba(17, 17, 17, 0.8);
+        border-radius: 100px;
+        color: $white;
+        font-size: 2rem;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        padding: 10px 20px;
+    }
+
+    &__author {
+        border: 1px solid $lightGray;
+        display: block;
+        font-size: 2rem;
+        height: 55px;
+        line-height: 55px;
+        margin-top: -4px;
+        padding-left: 1rem;
+
+        @media (min-width: $desktop-bp) {
+            visibility: hidden;
         }
     }
 }
