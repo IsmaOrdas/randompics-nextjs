@@ -7,7 +7,7 @@
     color: $white;
     display: flex;
     flex-direction: column;
-    height: 616px;
+    height: 638px;
     justify-content: center;
     padding: 160px 32px 0;
     margin-bottom: 9rem;
@@ -62,6 +62,7 @@
     }
 
     button {
+        font-size: 1rem;
         height: $btnBigHeigh;
         width: $btnMedium;
 
