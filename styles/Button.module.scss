@@ -6,9 +6,15 @@
     border-radius: 8px;
     text-transform: uppercase;
 
-    &--primary {
+    &--primary,
+    &--active {
         background-color: $primaryColor;
         color: $black;
+    }
+
+    &--disabled {
+        background-color: $black;
+        color: $white
     }
     
     &--small {

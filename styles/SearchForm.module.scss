@@ -1,21 +1,36 @@
 @import './variables.scss';
 
 .search-form {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $desktop-bp) {
+        flex-direction: row;
+    }
 
     &__input-wrap {
         margin-bottom: 1rem;
         position: relative;
         width: 100%;
+
+        @media (min-width: $desktop-bp) {
+            margin-right: 2rem;
+            max-width: $inputSearchMaxWidth;
+        }
     }
 
     &__btn {
         appearance: none;
         background-color: transparent;
         border: 0;
-        bottom: 6px;
         cursor: pointer;
+        height: $inputSmallHeight;
         position: absolute;
         right: 14px;
+
+        @media (min-width: $desktop-bp) {
+            height: $inputBigHeight;
+        }
     }
 
     &__input {
@@ -23,15 +38,28 @@
         border: 1px solid $midGray;
         border-radius: 8px;
         font-size: 0.8em;
-        height: 40px;
-        line-height: 40px;
+        height: $inputSmallHeight;
         padding-right: 2.5rem;
         width: 100%;
+
+        @media (min-width: $desktop-bp) {
+            height: $inputBigHeight;
+        }
     }
 
     &__btns-wrap {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        button {
+            height: $btnFilterSmallHeight;
+
+            @media (min-width: $desktop-bp) {
+                height: $btnFilterBigHeight;
+                margin-right: 1rem;
+            }
+            
+        }
     }
 }

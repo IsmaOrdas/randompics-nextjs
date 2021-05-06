@@ -1,10 +1,29 @@
+import React, { useState, useEffect } from 'react';
 import styles from '../../styles/SearchForm.module.scss';
 import Image from 'next/image'
 import Button from '../Button';
 
-export default function SearchForm() {
+export default function SearchForm(props) {
+    const [filterSelected, setFilterSelected] = useState('color');
+    const [query, setQuery] = useState('');
+
+    function selectFilter(ev) {
+        const filterClicked = ev.currentTarget.dataset.filter;
+
+        if (filterClicked === filterSelected) {
+            return false;
+        }
+        
+        setFilterSelected(filterClicked);
+    }
+
+    function submitForm(ev) {
+        ev.preventDefault();
+        props.parentCallback(query);
+    }
+
     return (
-        <form className={styles["search-form"]}>
+        <form className={styles["search-form"]} onSubmit={submitForm}>
             <div className={styles["search-form__input-wrap"]}>
                 <input
                     name="search-input"
@@ -14,6 +33,8 @@ export default function SearchForm() {
                     className={styles["search-form__input"]}
                     type="text"
                     placeholder="Search by author"
+                    value={query}
+                    onChange={e => setQuery(e.target.value)}
                     tabIndex="0"/>
                 <button className={styles["search-form__btn"]} aria-label="Click to search" title="Search">
                     <Image
@@ -25,9 +46,9 @@ export default function SearchForm() {
                 </button>
             </div>
             <div className={styles["search-form__btns-wrap"]}>
-                <Button type="primary" size="small">color</Button>
-                <Button size="small">grayscale</Button>
-                <Button size="small">blur</Button>
+                <button data-filter="color" className="btn btn--primary btn--small" onClick={selectFilter}>color</button>
+                <button data-filter="grayscale" className="btn btn--small" onClick={selectFilter}>grayscale</button>
+                <button data-filter="blur" className="btn btn--small" onClick={selectFilter}>blur</button>
             </div>
         </form>
     )

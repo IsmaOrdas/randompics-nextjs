@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <section id="content">
         <Hero right={<PhotosStack/>}></Hero>
-        <section class="container">
+        <section className="container">
           <SearchImages/>
         </section>
       </section>

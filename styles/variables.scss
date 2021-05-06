@@ -4,7 +4,7 @@ $lightGray: #EEEEEE;
 $white: #FFFFFF;
 $midGray: #AAAAAA;
 $black: #000000;
-
+$grayscaleColor: #E5E5E5;
 
 /*---Breakpoints---*/
 $tablet-bp: 900px;
@@ -18,8 +18,19 @@ $headerHeight: 104px;
 $headerHeightScrolled: 72px;
 
 
+/*---Forms---*/
 $btnBig: 300px;
 $btnMedium: 200px;
 $btnSmall: 118px;
 $btnSmallHeigh: 43px;
 $btnBigHeigh: 48px;
+
+$btnFilterSmallHeight: 43px;
+$btnFilterBigHeight: 55px;
+
+$inputSmallHeight: 48px;
+$inputBigHeight: 54px;
+
+$inputSearchMaxWidth: 400px;
+
+$contentWidth: 1211px;
