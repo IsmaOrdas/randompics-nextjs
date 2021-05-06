@@ -47,6 +47,10 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        padding: 46px;
+        padding: 37px;
+
+        @media (min-width: $desktop-bp) {
+            padding: 46px;
+        }
     }
 }
