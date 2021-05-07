@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../../styles/ListImages.module.scss';
+import Image from 'next/image'
 
 export default function ListImages(props) {
     const photos = props.list;
@@ -15,7 +16,12 @@ export default function ListImages(props) {
                 <li className={styles["list-images__item"]} key={index}>
                     <div className={styles["list-images__img-wrap"]}>
                         <span className={styles["list-images__number"]}>#{photo.id}</span>
-                        <img alt={`Photo by ${photo.author}`} className={styles["list-images__img"]} src={photoUrl}/>
+                        <Image
+                            src={photoUrl}
+                            alt={`Photo by ${photo.author}`}
+                            width={imgWidth}
+                            height={imgHeight}
+                        />
                         <span className={styles["list-images__author"]}>{photo.author}</span>
                     </div>
                 </li>
