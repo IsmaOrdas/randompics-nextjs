@@ -1,6 +1,7 @@
 @import './variables.scss';
 
 .search-images {
+    padding-bottom: 2.5rem;
     
     &__title {
         font-size: 2rem;
@@ -12,5 +13,10 @@
             margin: 0 0 2.5rem;
             text-align: left;
         }
+    }
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: center;
     }
 }

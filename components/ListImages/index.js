@@ -7,13 +7,13 @@ export default function ListImages(props) {
     let content = ""
 
     if (photos) {
-        content = photos.map((photo) => {
+        content = photos.map((photo, index) => {
             formatUrl(photo.download_url);
             return (
-                <li className={styles["list-images__item"]} key={photo.id}>
+                <li className={styles["list-images__item"]} key={index}>
                     <div className={styles["list-images__img-wrap"]}>
                         <span className={styles["list-images__number"]}>#{photo.id}</span>
-                        <img src={photoUrl}/>
+                        <img className={styles["list-images__img"]} src={photoUrl}/>
                         <span className={styles["list-images__author"]}>{photo.author}</span>
                     </div>
                 </li>
