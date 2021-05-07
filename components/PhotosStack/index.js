@@ -9,7 +9,7 @@ export default function PhotosStack(props) {
                     <div className={styles["photos-stack--img"]}>
                         <Image
                             src="/perrete.jpg"
-                            alt="Picture of the author"
+                            alt="Photo of dog"
                             width={400}
                             height={400}
                         />

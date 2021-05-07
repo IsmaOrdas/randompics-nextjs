@@ -15,7 +15,7 @@ export default function ListImages(props) {
                 <li className={styles["list-images__item"]} key={index}>
                     <div className={styles["list-images__img-wrap"]}>
                         <span className={styles["list-images__number"]}>#{photo.id}</span>
-                        <img className={styles["list-images__img"]} src={photoUrl}/>
+                        <img alt={`Photo by ${photo.author}`} className={styles["list-images__img"]} src={photoUrl}/>
                         <span className={styles["list-images__author"]}>{photo.author}</span>
                     </div>
                 </li>
