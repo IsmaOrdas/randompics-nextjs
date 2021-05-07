@@ -3,6 +3,8 @@ import styles from '../../styles/ListImages.module.scss';
 
 export default function ListImages(props) {
     const photos = props.list;
+    const imgWidth = "387";
+    const imgHeight = "343";
     let photoUrl = "";
     let content = ""
 
@@ -27,7 +29,7 @@ export default function ListImages(props) {
         let newUrl = url;
         newUrl = newUrl.split("/");
         newUrl.splice(-2,2)
-        newUrl= newUrl.join("/") + "/387/343";
+        newUrl= newUrl.join("/") + `/${imgWidth}/${imgHeight}`;
         if (props.filter) {
             newUrl = `${newUrl}?${props.filter}`;
         }
