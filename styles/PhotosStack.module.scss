@@ -2,10 +2,10 @@
 
 .photos-stack {
     background-color: $white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 252px;
+    box-shadow: 0px rem(4px) rem(4px) rgba(0, 0, 0, 0.25);
+    height: rem(252px);
     transform: rotate(12.66deg);
-    width: 252px;
+    width: rem(252px);
 
     &--wrap {
         display: flex;
@@ -17,29 +17,29 @@
     }
 
     &:nth-child(2) {
-        margin-top: -214px;
-        margin-left: 22px;
+        margin-top: rem(-214px);
+        margin-left: rem(22px);
         z-index: 2;
     }
 
     &:nth-child(3) {
-        margin-top: -214px;
-        margin-left: 42px;
+        margin-top: rem(-214px);
+        margin-left: rem(42px);
         z-index: 1;
     }
 
     @media (min-width: $desktop-bp) {
-        height: 420px;
-        width: 420px;
+        height: rem(420px);
+        width: rem(420px);
 
         &:nth-child(2) {
-            margin-top: -390px;
-            margin-left: 14px;
+            margin-top: rem(-390px);
+            margin-left: rem(14px);
         }
         
         &:nth-child(3) {
-            margin-top: -390px;
-            margin-left: 28px;
+            margin-top: rem(-390px);
+            margin-left: rem(28px);
         }
     }
 
@@ -47,10 +47,10 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        padding: 37px;
+        padding: rem(37px);
 
         @media (min-width: $desktop-bp) {
-            padding: 46px;
+            padding: rem(46px);
         }
     }
 }

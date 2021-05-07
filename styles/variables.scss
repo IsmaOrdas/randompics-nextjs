@@ -35,3 +35,7 @@ $inputBigHeight: 54px;
 $inputSearchMaxWidth: 400px;
 
 $contentWidth: 1211px;
+
+@function rem($size) {
+    @return $size / 16px * 1rem;
+}

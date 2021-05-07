@@ -20,6 +20,16 @@
         padding: 0px 32px 0;
     }
 
+    &__wrap {
+
+        @media (min-width: $desktop-bp) {
+            display: flex;
+            justify-content: space-between;
+            max-width: $contentWidth;
+            width: 100%;
+        }
+    }
+
     &--left {
         align-items: center;
         display: flex;
@@ -33,6 +43,8 @@
     }
 
     &--right {
+        display: flex;
+        justify-content: center;
         height: auto;
         width: auto;
 
