@@ -1,6 +1,8 @@
 # Notes
 
-Small project created with Next.js to learn React and the framework itself. Shows basic usage of Hooks and CSS modules.
+Small project created with Next.js to learn React and the framework itself.
+
+Shows basic usage of Hooks and CSS modules.
 
 It is a work in progress, so no all features work perfectly nor uses all the benefits that Next.js offers.
 
