@@ -11,6 +11,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <title>Random Pics</title>
+          <meta name="description">Demo project made with Next.js</meta>
           <link
             rel="preload"
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
