@@ -1,13 +1,12 @@
-# Comentarios
+# Notes
 
-## Maquetación
+Small project created with Next.js to learn React and the framework itself.
 
-Flexbox para el layout.
-Tengo una función para convertir de px a rem, pero solo la uso en el componente PhotoStack, a modo de ejemplo.
-He tenido en cuando pantalla grande y móvil en vertical, no tablets.
+Shows basic usage of Hooks and CSS modules.
 
-## Hooks
+It is a work in progress, so no all features work perfectly nor uses all the benefits that Next.js offers.
 
-Hice algunas "chapucillas" para evitar algunos errores en los Hooks.
+You can check it out [here](https://randompics-nextjs.vercel.app/).
 
-No he utilizado Redux ya que no me parecía necesario en este caso.
+Lighthouse:
+![](score.png)
