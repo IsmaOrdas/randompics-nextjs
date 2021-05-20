@@ -8,5 +8,6 @@ It is a work in progress, so no all features work perfectly nor uses all the ben
 
 You can check it out [here](https://randompics-nextjs.vercel.app/).
 
-Lighthouse:
+Lighthouse score simulating a mobile device:
+
 ![](score.png)
