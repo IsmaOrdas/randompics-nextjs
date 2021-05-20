@@ -10,13 +10,12 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Random Pics</title>
-          <meta name="description">Demo project made with Next.js</meta>
+          <meta name="description" content="Demo project made with Next.js"></meta>
           <link
             rel="preload"
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
             as="style"
-            onload="this.onload=null;this.rel='stylesheet'"
+            onLoad="this.onload=null;this.rel='stylesheet'"
           />
           <noscript>
             <link
